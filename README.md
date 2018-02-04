@@ -21,6 +21,7 @@ An API key can be created via the web UI. Here is an example header of a request
 
 - [Create bucket](bucket/create.md): `POST /api/v1/{username}/{bucketname}?create`
 - [Drop bucket](bucket/drop.md): `DELETE /api/v1/{username}/{bucketname}?delete`
+- [Get bucket info](bucket/meta.md): `GET /api/v1/{username}/{bucketname}?meta`
 
 ### Key-value related
 
