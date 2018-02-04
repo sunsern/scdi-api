@@ -38,6 +38,10 @@ and for geotemporal buckets are:
 
 **Data examples**
 
+```
+PUT /api/v1/admin/testtimeseriesbucket
+```
+
 ```json
 {
 	"ts" : 1517125302,
