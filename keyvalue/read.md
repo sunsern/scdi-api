@@ -18,7 +18,9 @@ N/A
 
 **Data examples**
 
-N/A
+```
+GET /api/v1/admin/kvbucket?key=testkey
+```
 
 ## Success Responses
 
