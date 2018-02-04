@@ -1,3 +1,5 @@
+[Back to main](../README.md)
+
 # Drop bucket
 
 Drops a data bucket.
@@ -12,7 +14,11 @@ Drops a data bucket.
 
 **Data constraints**
 
+N/A
+
 **Data examples**
+
+N/A
 
 ## Success Responses
 
@@ -20,12 +26,18 @@ Drops a data bucket.
 
 **Code** : `200 OK`
 
-**Content example** : The created bucket metadata will be returned.
+**Content example** : 
+
+```
+```
 
 ## Error Response
 
 **Code** : `400 BAD REQUEST`
 
 **Content example** :
+
+```
+```
 
 ## Notes
