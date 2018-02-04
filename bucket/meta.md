@@ -1,3 +1,5 @@
+[Back to main](../README.md)
+
 # Get bucket info
 
 Get meta information of a bucket. The information includes bucket type and column definitions.
@@ -11,6 +13,8 @@ Get meta information of a bucket. The information includes bucket type and colum
 **Permissions required** : Owner
 
 **Data constraints**
+
+N/A
 
 **Data examples**
 
