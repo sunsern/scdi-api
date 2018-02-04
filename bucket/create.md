@@ -12,7 +12,7 @@ Creates a data bucket.
 
 **Data constraints**
 
-```json
+```
 {
     "type": ["timeseries"|"geotemporal"|"keyvalue"|"kws"],
     "columns": [
