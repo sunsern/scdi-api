@@ -23,6 +23,10 @@ The entire request will be interpreted as value string.
 **Data examples**
 
 ```
+POST /api/v1/admin/kvbucket?key=testkey
+```
+
+```
 Test Value
 ```
 
