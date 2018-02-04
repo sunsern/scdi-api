@@ -18,7 +18,9 @@ N/A
 
 **Data examples**
 
-N/A
+```
+DELETE /api/v1/admin/testbucket?delete
+```
 
 ## Success Responses
 
