@@ -36,7 +36,7 @@ and for geotemporal buckets are:
 
 **Data examples**
 
-```
+```json
 {
 	"ts" : 1517125302,
 	"rain" : 12.0,
