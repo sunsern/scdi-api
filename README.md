@@ -28,7 +28,7 @@ An API key can be created via the web UI. Here is an example header of a request
 - [Write key](keyvalue/write.md): `POST /api/v1/{username}/{bucketname}?key={keyvalue}`
 - [Read key](keyvalue/read.md): `GET /api/v1/{username}/{bucketname}?key={keyvalue}`
 
-### Timeseries related
+### Timeseries/Geotemoporal related
 
 - [Add row](timeseries/add.md): `PUT /api/v1/{username}/{bucketname}`
 - [Add multiple rows](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch`
