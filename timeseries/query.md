@@ -43,39 +43,51 @@ Where filters are conjuctions. If aggregation is present, the data returned will
 
 **Data examples**
 
-```json
-{
-	"fromEpoch": 1517125310,
-	"limit":1,
-	"where": [
-		{
-			"column": "rain",
-			"op": "gt",
-			"value": 113
-		}]
-}
+Without aggregation,
+
+```
+POST /api/v1/admin/testtimeseriesbucket?query
 ```
 
 ```json
 {
-	"fromEpoch": 1517125310,
-	"aggregate" : [
-			{
-				"column": "rain",
-				"op": "avg"
-			},
-			{
-				"column": "temp",
-				"op": "avg"
-			}
-		],
-	"where": [
-		{
-			"column": "rain",
-			"op": "gt",
-			"value": 113
-		}
-		]
+  "fromEpoch": 1517125310,
+  "limit":1,
+  "where": [
+  {
+    "column": "rain",
+    "op": "gt",
+    "value": 113
+  }]
+}
+```
+
+With aggregation,
+
+```
+POST /api/v1/admin/testtimeseriesbucket?query
+```
+
+```json
+{
+  "fromEpoch": 1517125310,
+  "aggregate" : [
+    {
+      "column": "rain",
+      "op": "avg"
+    },
+    {
+      "column": "temp",
+      "op": "avg"
+    }
+  ],
+  "where": [
+    {
+      "column": "rain",
+      "op": "gt",
+      "value": 113
+    }
+  ]
 }
 ```
 
