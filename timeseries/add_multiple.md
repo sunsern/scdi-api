@@ -47,6 +47,10 @@ and for geotemporal buckets are:
 
 **Data examples**
 
+```
+POST /api/v1/admin/testtimeseriesbucket?batch
+```
+
 ```json
 [
   {
