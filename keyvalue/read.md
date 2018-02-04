@@ -1,3 +1,5 @@
+[Back to main](../README.md)
+
 # Read key
 
 Retrieves a string value associated with a specific key.
