@@ -1,3 +1,5 @@
+[Back to main](../README.md)
+
 # Write key
 
 Assigns a string value to a specific key.
