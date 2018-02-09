@@ -1,6 +1,6 @@
 # SCDI API
 
-The SCDI APIs are designed to allow access to features of the SCDI platform. 
+The SCDI APIs are designed to allow access to features of the SCDI platform. [https://sunsern.github.io/scdi-api/]
 
 ## Open Endpoints
 
