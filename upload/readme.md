@@ -52,7 +52,9 @@ Content-MD5: {partMd5:required}
 
 `{partNumber}` can be anything between 1-10,000 inclusive. `{objectName}` is the name of the object. objectName is case sensitive. Internal structure of this object storage is flat, but you can use the delimiter (/) to build your own hierarchy structure in the objectName. For examples: objectName can be
 
+```
 documents/asd.txt Documents/asd.txt
+```
 
 #### Response body
 
@@ -67,7 +69,26 @@ documents/asd.txt Documents/asd.txt
 
 ```
 POST /{username}/{bucketName}/{objectName}?complete HTTP/1.1
+Content-Length: {totalLength:required}
+Content-MD5: {eTag:required}
 ```
+
+We do not use regular MD5 hash To check the integrity of a file that was uploaded in multiple parts. Instead of calculating the hash of the entire file, we calculate the hash of each part and combines that into a single hash and, then, the number of parts is appended to the end of the md5 hash.
+
+```
+eTag = {md5 of {md5 of all parts in bytes}}-{numberOfPart}
+```
+For examples, if you have splitted a file in two 3 parts with the following MD5 respectively:
+
+```
+MD5 of part 1 = 9961bbe5d7c70a5f0e23d63bc7433b01
+MD5 of part 2 = bfbd30c675df62d67f02d0efa72bc1ac
+MD5 of part 3 = 92589dcb2dd1bcc29ab1ee6b8eb7f6aa
+
+Cheksum of all parts is 1e2028574f9067f32990b8ac5cc8456c-3
+```
+
+
 
 #### Request parameters
 
@@ -99,12 +120,6 @@ GET /{username}/{bucketName}/{objectName}?metadata HTTP/1.1
 
 ```
 GET /{username}/{bucketName}/{objectName} HTTP/1.1
-```
-
-### 2.6 Download part
-
-```
-GET /{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
 ```
 
 ### Possible Exceptions
