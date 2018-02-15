@@ -41,5 +41,5 @@ Closed endpoints require a valid API key to be included in the header of the req
 
 - [Add row](timeseries/add.md): `PUT /api/v1/{username}/{bucketname}`
 - [Add multiple rows](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch`
-- [Add multiple rows from uploaded file](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch&copyFrom={objname}`
+- [Add multiple rows from uploaded file](timeseries/add_multiple_copyfrom.md): `POST /api/v1/{username}/{bucketname}?batch&copyFrom={objname}`
 - [Simple query](timeseries/query.md): `POST /api/v1/{username}/{bucketname}?query`
