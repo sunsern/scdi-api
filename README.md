@@ -1,19 +1,18 @@
 # SCDI API
 
-The SCDI APIs are designed to allow access to features of the SCDI platform. The reference document can be found here: https://sunsern.github.io/scdi-api/.
+The SCDI APIs are designed to allow access to features of the SCDI platform. The reference document can be found here: <https://sunsern.github.io/scdi-api/>.
 
 ## Open Endpoints
 
-Currently all SCDI endpoints require authentication. 
+Currently all SCDI endpoints require authentication.
 
 ## Endpoints that require authentication
 
-Closed endpoints require a valid API key to be included in the header of the request. 
-An API key can be created via the web UI. Here is an example header of a request.
+Closed endpoints require a valid API key to be included in the header of the request. An API key can be created via the web UI. Here is an example header of a request.
 
 **HEADER** : `APIKEY: [a valid API key]`
 
-### Upload related 
+### Upload related
 
 - [Upload](upload/readme.md)
 
@@ -32,5 +31,5 @@ An API key can be created via the web UI. Here is an example header of a request
 
 - [Add row](timeseries/add.md): `PUT /api/v1/{username}/{bucketname}`
 - [Add multiple rows](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch`
-- [Add multiple rows from uploaded file](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch&copyFrom=`
+- [Add multiple rows from uploaded file](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch&copyFrom={objname}`
 - [Simple query](timeseries/query.md): `POST /api/v1/{username}/{bucketname}?query`
