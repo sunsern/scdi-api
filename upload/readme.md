@@ -50,7 +50,7 @@ Content-MD5: {partMd5:required}
 
 #### Request parameters
 
-`{partNumber}` can be anything between 1-10,000 inclusive. `{objectName}` is the name of the object. objectName is case sensitive. Internal structure of this object storage is flat, but you can use the delimiter (/) to build your own hierarchy structure in the objectName. For examples: objectName can be
+`{partNumber}` can be anything between 1-10,000 inclusive. `{objectName}` is the name of the object. objectName is case insensitive. Internal structure of this object storage is flat, but you can use the delimiter (/) to build your own hierarchy structure in the objectName. For examples: objectName can be
 
 ```
 documents/asd.txt Documents/asd.txt
