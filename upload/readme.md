@@ -15,7 +15,7 @@ There are two ways to upload files to SCDI.
 ### Request
 
 ```
-PUT /{username}/{bucketName}/{objectName} HTTP/1.1
+PUT /api/v1/{username}/{bucketName}/{objectName} HTTP/1.1
 Content-Length: {partSize:required}
 Content-MD5: {partMd5:required}
 ```
@@ -33,7 +33,7 @@ Multi-part upload contains three steps:
 #### Request
 
 ```
-POST /{username}/{bucketName}/{objectName}?create HTTP/1.1
+POST /api/v1/{username}/{bucketName}/{objectName}?create HTTP/1.1
 ```
 
 #### Request parameters
@@ -43,7 +43,7 @@ None
 ### 2.2 Upload parts
 
 ```
-PUT /{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
+PUT /api/v1/{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
 Content-Length: {partSize:required}
 Content-MD5: {partMd5:required}
 ```
@@ -68,7 +68,7 @@ documents/asd.txt Documents/asd.txt
 ### 2.3 Complete Multi-part upload
 
 ```
-POST /{username}/{bucketName}/{objectName}?complete HTTP/1.1
+POST /api/v1/{username}/{bucketName}/{objectName}?complete HTTP/1.1
 Content-Length: {totalLength:required}
 Content-MD5: {eTag:required}
 ```
@@ -97,7 +97,7 @@ Cheksum of all parts is 1e2028574f9067f32990b8ac5cc8456c-3
 ### 2.4 Delete parts
 
 ```
-DELETE /{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
+DELETE /api/v1/{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
 ```
 
 #### Request parameters
@@ -107,19 +107,19 @@ DELETE /{username}/{bucketName}/{objectName}?partNumber=1 HTTP/1.1
 ### 2.5 Get parts information
 
 ```
-GET /{username}/{bucketName}/{objectName}?partNumber=1&metadata HTTP/1.1
+GET /api/v1/{username}/{bucketName}/{objectName}?partNumber=1&metadata HTTP/1.1
 ```
 
 ### 2.6 Get object information
 
 ```
-GET /{username}/{bucketName}/{objectName}?metadata HTTP/1.1
+GET /api/v1/{username}/{bucketName}/{objectName}?metadata HTTP/1.1
 ```
 
 ### 2.6 Download object
 
 ```
-GET /{username}/{bucketName}/{objectName} HTTP/1.1
+GET /api/v1/{username}/{bucketName}/{objectName} HTTP/1.1
 ```
 
 ### Possible Exceptions
