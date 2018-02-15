@@ -2,13 +2,23 @@
 
 The SCDI APIs are designed to allow access to features of the SCDI platform. The reference document can be found here: <https://sunsern.github.io/scdi-api/>.
 
+## Service URLs
+
+| Service | URL    | Status |
+|---------|--------|--------|
+| SCDI Portal (TEST) | https://scdi.philinelabs.net/ | **OK** |
+| SCDI REST API (TEST) | https://scdi-api.philinelabs.net/ | **OK** |
+| SCDI Portal (PROD) | n/a | **DOWN** |
+| SCDI REST API (PROD) | n/a | **DOWN** |
+
+
 ## Open Endpoints
 
 Currently all SCDI endpoints require authentication.
 
 ## Endpoints that require authentication
 
-Closed endpoints require a valid API key to be included in the header of the request. An API key can be created via the web UI. Here is an example header of a request.
+Closed endpoints require a valid API key to be included in the header of the request. An API key can be created via the web portal found here: https://scdi.philinelabs.net/. Here is an example header of a request.
 
 **HEADER** : `APIKEY: [a valid API key]`
 
