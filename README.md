@@ -32,4 +32,5 @@ An API key can be created via the web UI. Here is an example header of a request
 
 - [Add row](timeseries/add.md): `PUT /api/v1/{username}/{bucketname}`
 - [Add multiple rows](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch`
+- [Add multiple rows from uploaded file](timeseries/add_multiple.md): `POST /api/v1/{username}/{bucketname}?batch&copyFrom=`
 - [Simple query](timeseries/query.md): `POST /api/v1/{username}/{bucketname}?query`
