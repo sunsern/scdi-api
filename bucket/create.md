@@ -16,7 +16,7 @@ Creates a data bucket.
 
 ```
 {
-    "type": ["timeseries"|"geotemporal"|"keyvalue"],
+    "type": ["timeseries"|"geotemporal"|"keyvalue"|"kws"],
     "columns": [
       {
         "name": [column name],
