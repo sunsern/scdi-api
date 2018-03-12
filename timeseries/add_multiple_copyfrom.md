@@ -32,7 +32,7 @@ Note that `test.json` must be uploaded prior to the request.
 
 **Content example** :
 
-````
+```
 ```
 
 ## Error Response
@@ -40,7 +40,7 @@ Note that `test.json` must be uploaded prior to the request.
 **Code** : `400 BAD REQUEST`
 
 **Content example** :
-````
+```
 
 ```
 
