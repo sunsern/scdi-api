@@ -3,9 +3,7 @@
 ## How to start mock GPS probes
 
 1. Make sure username and API key is set correctly in `client.py`
-2. ```
-  python client.py
-  ```
+2. Run `python client.py`
 
 ## How to start the visualizer
 
