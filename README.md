@@ -4,11 +4,10 @@ The SCDI APIs are designed to allow access to features of the SCDI platform. The
 
 ## Service URLs
 
-| Service | URL    | Status |
-|---------|--------|--------|
-| SCDI Portal | https://scdi.philinelabs.net/ | **OK** |
-| SCDI REST API | https://scdi-api.philinelabs.net/ | **OK** |
-
+Service       | URL                                 | Status
+------------- | ----------------------------------- | ------
+SCDI Portal   | <https://scdi.philinelabs.net/>     | **OK**
+SCDI REST API | <https://scdi-api.philinelabs.net/> | **OK**
 
 ## Open Endpoints
 
@@ -16,7 +15,7 @@ Currently all SCDI endpoints require authentication.
 
 ## Endpoints that require authentication
 
-Closed endpoints require a valid API key to be included in the header of the request. An API key can be created via the web portal found here: https://scdi.philinelabs.net/. Here is an example header of a request.
+Closed endpoints require a valid API key to be included in the header of the request. An API key can be created via the web portal found here: <https://scdi.philinelabs.net/>. Here is an example header of a request.
 
 **HEADER** : `APIKEY: [a valid API key]`
 
@@ -26,9 +25,11 @@ Closed endpoints require a valid API key to be included in the header of the req
 
 ### Bucket related
 
+- [List buckets](bucket/list.md): `GET /api/v1/{username}`
 - [Create bucket](bucket/create.md): `POST /api/v1/{username}/{bucketname}?create`
 - [Drop bucket](bucket/drop.md): `DELETE /api/v1/{username}/{bucketname}?delete`
 - [Get bucket info](bucket/meta.md): `GET /api/v1/{username}/{bucketname}?meta`
+- [List objects](bucket/objects.md): `GET /api/v1/{username}/{bucketname}?meta`
 
 ### Key-value related
 
