@@ -6,10 +6,8 @@ The SCDI APIs are designed to allow access to features of the SCDI platform. The
 
 | Service | URL    | Status |
 |---------|--------|--------|
-| SCDI Portal (TEST) | https://scdi.philinelabs.net/ | **OK** |
-| SCDI REST API (TEST) | https://scdi-api.philinelabs.net/ | **OK** |
-| SCDI Portal (PROD) | n/a | **DOWN** |
-| SCDI REST API (PROD) | n/a | **DOWN** |
+| SCDI Portal | https://scdi.philinelabs.net/ | **OK** |
+| SCDI REST API | https://scdi-api.philinelabs.net/ | **OK** |
 
 
 ## Open Endpoints
