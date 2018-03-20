@@ -29,7 +29,7 @@ Closed endpoints require a valid API key to be included in the header of the req
 - [Create bucket](bucket/create.md): `POST /api/v1/{username}/{bucketname}?create`
 - [Drop bucket](bucket/drop.md): `DELETE /api/v1/{username}/{bucketname}?delete`
 - [Get bucket info](bucket/meta.md): `GET /api/v1/{username}/{bucketname}?meta`
-- [List objects](bucket/objects.md): `GET /api/v1/{username}/{bucketname}?meta`
+- [List objects](bucket/objects.md): `GET /api/v1/{username}/{bucketname}?list`
 
 ### Key-value related
 
